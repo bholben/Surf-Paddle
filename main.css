@@ -1,6 +1,15 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
+	color: #083451;
+}
+
+ul {
+	margin: 0;
+}
+
+li {
+	list-style: none;
 }
 
 .container {
@@ -9,24 +18,78 @@ body {
 	background-color: #eee;
 }
 
+
+/* Header */
+
 header {
 	height: 523px;
 	background-image: url("assets/header.jpg");
-	font-family: "Oswald", sans-serif;
+}
+
+header nav {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.logo {
+	float: left;
 }
 
 .logo img {
-	width: 35px;
+	width: 42px;
+	vertical-align: middle;
+}
+
+.logo span {
+	height: 42px;
+	margin-left: 10px;
+}
+
+.navLinks {
+	float: right;
+	padding: 8px;
+}
+
+.navLinks li {
+	float: left;
+	margin-left: 15px;
+	font-size: 20px;
+}
+
+.navLinks li a {
+	text-decoration: none;
+	color: #083451;
+}
+
+.navLinks img {
+	height: 18px;
+	margin-left: 5px;
+}
+
+h1 {
+	margin: 185px 0 -15px;
+	font-size: 96px;
+	color: white;
+	text-transform: uppercase;
+}
+
+h4 {
+	margin: 0;
+	font-size: 14px;
+}
+
+h1, h4 {
+	/*font-family: "Oswald", sans-serif;*/
+	text-align: center
 }
 
 
-
-
-
-
+/* Main */
 
 .main {
-	width: 900px;
+	width: 1000px;
 	height: 500px;
 	margin: 0 auto;
 	background-color: lightgrey;
