@@ -1,14 +1,38 @@
 
 body {
-	font-family: 'Open Sans', sans-serif;
-}
-
-header {
-	font-family: 'Oswald', sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 .container {
 	width: 1300px;
 	margin: 0 auto;
+	background-color: #eee;
+}
+
+header {
+	height: 523px;
+	background-image: url("assets/header.jpg");
+	font-family: "Oswald", sans-serif;
+}
+
+.logo img {
+	width: 35px;
+}
+
+
+
+
+
+
+
+.main {
+	width: 900px;
+	height: 500px;
+	margin: 0 auto;
+	background-color: lightgrey;
+}
+
+article {
+	
 }
 
