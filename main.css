@@ -14,6 +14,10 @@ li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 h2 {
 	margin: 0;
 	text-transform: uppercase;
@@ -69,7 +73,6 @@ header nav {
 }
 
 .navLinks li a {
-	text-decoration: none;
 	color: #083451;
 }
 
@@ -151,20 +154,43 @@ aside {
 }
 
 .topPosts li {
+	float: left;
+	position: relative;
 	width: 325px;
 	height: 330px;
-	float: left;
+/*	background:
+	  linear-gradient(
+	    rgba(255, 0, 0, 0.45), 
+	    rgba(255, 0, 0, 0.45)
+	  );
+*/	/*background-color: rgba(255, 0, 0, 0.25);*/
+	/*background-color: #3399cc;*/
+	/*opacity: 0.1;*/
 }
 
-.post1 { background-image: url("assets/article-image-1.jpg") }
+.post1 {
+	background:
+	  linear-gradient(
+	    rgba(0, 130, 200, 0.8), 
+	    rgba(0, 130, 200, 0.8)
+	  ),
+	  url("assets/article-image-1.jpg")
+}
 .post2 { background-image: url("assets/article-image-2.jpg") }
 .post3 { background-image: url("assets/article-image-3.jpg") }
 .post4 { background-image: url("assets/article-image-4.jpg") }
 
 .topPosts h3 {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
 	margin: 0;
 	font-size: 28px;
 	text-transform: uppercase;
+}
+
+.topPosts h3 a {
+	color: white;
 }
 
 
