@@ -99,14 +99,15 @@ h1, h4 {
 }
 
 
-/* Main */
+/* Main Body */
 
-.main {
+section {
 	width: 1000px;
 	margin: 0 auto;
 	overflow: auto;
 	background-color: #ddd;
 }
+
 
 /* Article */
 
@@ -161,8 +162,6 @@ article {
 }
 
 
-
-
 /* Sidebar */
 
 aside {
@@ -178,8 +177,6 @@ aside {
 .ad {
 	text-align: center;
 }
-
-
 
 
 /* Top Posts */
@@ -281,6 +278,7 @@ aside {
 .topPosts li a:hover {
 	color: white;
 }
+
 
 /* Footer */
 
