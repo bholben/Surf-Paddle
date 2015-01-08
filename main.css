@@ -25,6 +25,10 @@ h2 {
 	font-weight: bold;
 }
 
+blockquote {
+	border-left: 5px solid gray;
+}
+
 .container {
 	width: 1300px;
 	margin: 0 auto;
@@ -180,8 +184,6 @@ aside {
 }
 
 
-
-
 /* Top Posts */
 
 .topPosts {
@@ -200,69 +202,19 @@ aside {
 	height: 330px;
 }
 
-.post1 {
-	background:
-	  linear-gradient(
-	    rgba(0, 150, 220, 0.65), 
-	    rgba(0, 150, 220, 0.65)
-	  ),
-	  url("assets/article-image-1.jpg")
+.filter {
+  background-color: hsla(206, 52%, 60%, 0.8);
+  width:325px;
+  height:330px;
+  position: absolute;
+  top:0;
+  left: 0;
 }
-.post1:hover {
-	background:
-	  linear-gradient(
-	    rgba(0, 0, 0, 0), 
-	    rgba(0, 0, 0, 0)
-	  ),
-	  url("assets/article-image-1.jpg")
-}
-.post2 {
-	background:
-	  linear-gradient(
-	    rgba(0, 150, 220, 0.65), 
-	    rgba(0, 150, 220, 0.65)
-	  ),
-	  url("assets/article-image-2.jpg")
-}
-.post2:hover {
-	background:
-	  linear-gradient(
-	    rgba(0, 0, 0, 0), 
-	    rgba(0, 0, 0, 0)
-	  ),
-	  url("assets/article-image-2.jpg")
-}
-.post3 {
-	background:
-	  linear-gradient(
-	    rgba(0, 150, 220, 0.65), 
-	    rgba(0, 150, 220, 0.65)
-	  ),
-	  url("assets/article-image-3.jpg")
-}
-.post3:hover {
-	background:
-	  linear-gradient(
-	    rgba(0, 0, 0, 0), 
-	    rgba(0, 0, 0, 0)
-	  ),
-	  url("assets/article-image-3.jpg")
-}
-.post4 {
-	background:
-	  linear-gradient(
-	    rgba(0, 150, 220, 0.65), 
-	    rgba(0, 150, 220, 0.65)
-	  ),
-	  url("assets/article-image-4.jpg")
-}
-.post4:hover {
-	background:
-	  linear-gradient(
-	    rgba(0, 0, 0, 0), 
-	    rgba(0, 0, 0, 0)
-	  ),
-	  url("assets/article-image-4.jpg")
+
+.filter:hover {
+  background-color: hsla(206, 52%, 60%, 0);
+  color: white;
+	cursor: pointer;
 }
 
 .topPosts h3 {
@@ -272,14 +224,6 @@ aside {
 	margin: 0;
 	font-size: 28px;
 	text-transform: uppercase;
-}
-
-.topPosts h3 a {
-	color: black;
-}
-
-.topPosts li a:hover {
-	color: white;
 }
 
 /* Footer */
@@ -308,6 +252,10 @@ footer li::before {
 	content: "|";
 	padding: 0 5px;
 	color: #5C6870;
+}
+
+footer li::before:last-child {
+	content: "";
 }
 
 footer li a::before:first-child {
