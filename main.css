@@ -7,10 +7,18 @@ body {
 
 ul {
 	margin: 0;
+	padding: 0;
 }
 
 li {
 	list-style: none;
+}
+
+h2 {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 60px;
+	font-weight: bold;
 }
 
 .container {
@@ -92,9 +100,9 @@ h1, h4 {
 
 .main {
 	width: 1000px;
-	/*height: 500px;*/
 	margin: 0 auto;
-	background-color: lightgrey;
+	overflow: auto;
+	background-color: #ddd;
 }
 
 /* Article */
@@ -103,13 +111,6 @@ article {
 	float: left;
 	width: 670px;
 	/*background-color: cyan;*/
-}
-
-article h2 {
-	margin: 0;
-	text-transform: uppercase;
-	font-size: 60px;
-	font-weight: bold;
 }
 
 .author img {
@@ -135,4 +136,35 @@ aside {
 .ad {
 	text-align: center;
 }
+
+
+
+
+/* Top Posts */
+
+.topPosts {
+	background-color: brown;
+}
+
+.topPosts h2 {
+	text-align: center;
+}
+
+.topPosts li {
+	width: 325px;
+	height: 330px;
+	float: left;
+}
+
+.post1 { background-image: url("assets/article-image-1.jpg") }
+.post2 { background-image: url("assets/article-image-2.jpg") }
+.post3 { background-image: url("assets/article-image-3.jpg") }
+.post4 { background-image: url("assets/article-image-4.jpg") }
+
+.topPosts h3 {
+	margin: 0;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
 
