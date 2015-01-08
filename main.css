@@ -113,12 +113,51 @@ h1, h4 {
 article {
 	float: left;
 	width: 670px;
-	/*background-color: cyan;*/
 }
 
 .author img {
 	vertical-align: middle;
 	width: 25px;
+}
+
+.read {
+	margin-right: 10px;
+}
+
+.actions li {
+	float: left;
+	font-size: 14px;
+	color: #EEF3F9;
+}
+
+.actions img {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 15px;
+	padding: 7px;
+}
+
+.actions span {
+	padding: 5px 15px;
+	line-height: 30px;
+	background-color: #A0B3C0;
+}
+
+.actions .share img {
+	padding-left: 10px;
+}
+
+.actions .share span {
+	background-color: #0069B6;
+}
+
+.read img {
+	background-color: #5D6970;
+}
+
+.share img {
+	background-color: #003353;
 }
 
 
@@ -146,7 +185,6 @@ aside {
 /* Top Posts */
 
 .topPosts {
-	/*background-color: brown;*/
 	border-top: 1px solid lightgrey;
 }
 
@@ -240,9 +278,11 @@ aside {
 	color: black;
 }
 
-.topPosts li h3 a:hover {
+.topPosts li a:hover {
 	color: white;
 }
+
+/* Footer */
 
 footer {
 	width: 100%;
@@ -270,7 +310,7 @@ footer li::before {
 	color: #5C6870;
 }
 
-footer li a::before::first-child {
+footer li a::before:first-child {
 	content: "";
 }
 
