@@ -202,7 +202,7 @@ aside {
 	height: 330px;
 }
 
-.filter {
+.topPosts .filter {
   background-color: hsla(206, 52%, 60%, 0.8);
   width:325px;
   height:330px;
@@ -211,13 +211,13 @@ aside {
   left: 0;
 }
 
-.filter:hover {
+.topPosts .filter:hover {
   background-color: hsla(206, 52%, 60%, 0);
   color: white;
 	cursor: pointer;
 }
 
-.topPosts h3 {
+.topPosts .filter h3 {
 	position: absolute;
 	left: 15px;
 	bottom: 15px;
@@ -241,34 +241,34 @@ nav {
 	margin: 30px auto;
 }
 
-.copyright,
+footer .copyright,
 footer li,
 footer li a {
 	float: left;
 	color: #A0B3C0;
 }
 
-footer li::before {
-	content: "|";
-	padding: 0 5px;
-	color: #5C6870;
+footer .copyright a {
+	color: #A3B3BF;
 }
 
-footer li::before:last-child {
-	content: "";
-}
-
-footer li a::before:first-child {
-	content: "";
-}
-
-.copyright span {
+footer .copyright span {
 	vertical-align: 8px;
 	margin-left: 8px;
 }
 
+
 footer ul {
 	padding-top: 8px;
 	float: right;
+}
+
+footer li {
+	padding: 0 5px;
+	border-left: 1px solid #5C6870;
+}
+
+footer li:first-child {
+	border-left: none;
 }
 
