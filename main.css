@@ -14,15 +14,33 @@ li {
 	list-style: none;
 }
 
-a {
-	text-decoration: none;
+h1 {
+	/*font-family: "Oswald", sans-serif;*/
+	margin: 185px 0 -15px;
+	font-size: 96px;
+	color: white;
+	text-transform: uppercase;
 }
 
 h2 {
-	margin: 0;
+	margin: 0 20px 10px 0;
 	text-transform: uppercase;
 	font-size: 72px;
 	font-weight: bold;
+	line-height: 100%;
+}
+
+h4 {
+	margin: 0;
+	font-size: 14px;
+}
+
+h1, h4 {
+	text-align: center
+}
+
+a {
+	color: #abc;
 }
 
 blockquote {
@@ -45,68 +63,55 @@ header {
 }
 
 header nav {
-	width: 1000px;
+	width: 970px;
 	margin: 0 auto;
 	padding-top: 10px;
 	text-transform: uppercase;
 }
 
-.logo {
+header nav .logo {
 	float: left;
 }
 
-.logo img {
+header nav .logo img {
 	width: 42px;
 	vertical-align: middle;
 }
 
-.logo span {
+header nav .logo span {
 	height: 42px;
 	margin-left: 10px;
 }
 
-.navLinks {
+header nav a {
+	text-decoration: none;
+}
+
+header nav .navLinks {
 	float: right;
 	padding: 8px;
 }
 
-.navLinks li {
+header nav .navLinks li {
 	float: left;
 	margin-left: 15px;
 	font-size: 20px;
 }
 
-.navLinks li a {
+header nav .navLinks li a {
 	color: #083451;
 }
 
-.navLinks img {
+header nav .navLinks img {
 	height: 18px;
 	margin-left: 5px;
-}
-
-h1 {
-	margin: 185px 0 -15px;
-	font-size: 96px;
-	color: white;
-	text-transform: uppercase;
-}
-
-h4 {
-	margin: 0;
-	font-size: 14px;
-}
-
-h1, h4 {
-	/*font-family: "Oswald", sans-serif;*/
-	text-align: center
 }
 
 
 /* Main */
 
 .main {
-	width: 1000px;
+	width: 970px;
 	margin: 0 auto;
 	overflow: auto;
 	background-color: #ddd;
@@ -116,12 +121,39 @@ h1, h4 {
 
 article {
 	float: left;
-	width: 670px;
+	width: 650px;
+	padding: 0 20px 20px 0;
+}
+
+.author {
+	margin-bottom: 40px;
+}
+
+.author > a {
+	text-decoration: none;
+	color: #347FBF;
 }
 
 .author img {
 	vertical-align: middle;
 	width: 25px;
+}
+
+.author span {
+	padding: 0 5px;
+}
+
+.authorName {
+	padding-left: 30px;
+}
+
+.articleDate,
+.articleDate a {
+	color: #abc;
+}
+
+article p {
+	color: #3A4D58;
 }
 
 .read {
@@ -171,7 +203,7 @@ article {
 
 aside {
 	float: right;
-	width: 330px;
+	width: 278px;
 	background-color: lightgray;
 }
 
@@ -237,7 +269,7 @@ footer {
 }
 
 nav {
-	width: 1000px;
+	width: 970px;
 	margin: 30px auto;
 }
 
