@@ -99,15 +99,14 @@ h1, h4 {
 }
 
 
-/* Main Body */
+/* Main */
 
-section {
+.main {
 	width: 1000px;
 	margin: 0 auto;
 	overflow: auto;
 	background-color: #ddd;
 }
-
 
 /* Article */
 
@@ -162,6 +161,8 @@ article {
 }
 
 
+
+
 /* Sidebar */
 
 aside {
@@ -177,6 +178,8 @@ aside {
 .ad {
 	text-align: center;
 }
+
+
 
 
 /* Top Posts */
@@ -279,7 +282,6 @@ aside {
 	color: white;
 }
 
-
 /* Footer */
 
 footer {
@@ -290,7 +292,7 @@ footer {
 	background-color: #003353;
 }
 
-.footerContainer {
+nav {
 	width: 1000px;
 	margin: 30px auto;
 }
