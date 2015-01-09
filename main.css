@@ -31,11 +31,24 @@ h2 {
 }
 
 h4 {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+h5 {
+	margin: 10px 0;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 100;
+	color: #347FBF;
+}
+
+h6 {
 	margin: 0;
 	font-size: 14px;
 }
 
-h1, h4 {
+h1, h6 {
 	text-align: center
 }
 
@@ -114,7 +127,7 @@ header nav .navLinks img {
 	width: 970px;
 	margin: 0 auto;
 	overflow: auto;
-	background-color: #ddd;
+	/*background-color: #ddd;*/
 }
 
 /* Article */
@@ -204,11 +217,22 @@ article p {
 aside {
 	float: right;
 	width: 278px;
-	background-color: lightgray;
+	/*background-color: lightgray;*/
 }
 
 .social {
 	text-align: center;
+	margin-bottom: 50px;
+}
+
+.social span {
+	padding: 0 5px;
+	font-size: 14px;
+}
+
+.social span a {
+	color: #abc;
+	text-decoration: none;
 }
 
 .ad {
