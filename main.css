@@ -233,47 +233,43 @@ article p a:hover {
 }
 
 
-.action {
-	position: relative;
+ul.buttons {
 	height: 30px;
-	width: 168px;
+}
+
+ul.buttons li {
+	float: left;
+	height: 100%;
+	margin-right: 10px;
+	background-color: #A0B3C0;
+}
+
+ul.buttons li:hover {
 	background-color: #0069B6;
 }
 
-.action li {
+ul.buttons li span.icon {
 	float: left;
+	width: 32px;
+	height: 100%;
+	background-color: #5D6970;
 }
 
-.action .icon {
-	position: absolute;
-	height: 30px;
-	width: 32px;
+ul.buttons li:hover span.icon {
 	background-color: #003353;
 }
 
-.action .icon img {
-	float: left;
+ul.buttons li span.icon img {
 	padding: 8px;
 }
 
-.action .text {
-	padding: 5px 0 0 45px;
+ul.buttons li span.text {
+	float: left;
+	height: 100%;
+	padding: 5px 15px;
 	font-size: 14px;
 	color: #EEF3F9;
 }
-
-.action .filter {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	background-color: rgba(255, 255, 255, 0.6);
-}
-
-.action .filter:hover {
-	background-color: rgba(255, 255, 255, 0);
-}
-
 
 
 /* Sidebar */
