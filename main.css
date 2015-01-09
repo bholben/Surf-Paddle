@@ -293,7 +293,7 @@ section.topPosts li {
 	height: 330px;
 }
 
-section.topPosts .filter {
+section.topPosts li .filter {
   background-color: hsla(206, 80%, 60%, 0.8);
   width:325px;
   height:330px;
@@ -302,18 +302,21 @@ section.topPosts .filter {
   left: 0;
 }
 
-section.topPosts .filter:hover {
+section.topPosts li .filter:hover {
   background-color: hsla(206, 80%, 60%, 0);
-  color: white;
 	cursor: pointer;
 }
 
-section.topPosts .filter h3 {
+section.topPosts li .filter h3 {
 	position: absolute;
 	left: 15px;
 	bottom: 15px;
 	margin: 0;
 	color: #003353;
+}
+
+section.topPosts li .filter:hover h3 {
+  color: white;
 }
 
 /* Footer */
