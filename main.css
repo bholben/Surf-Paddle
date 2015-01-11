@@ -66,10 +66,14 @@ a {
 
 blockquote {
 	border-left: 2px solid #D3D3D3;
-	height: 60px;
 	line-height: 60px;
 	padding-left: 15px;
 	margin-left: 5px;
+}
+
+nav {
+	width: 970px;
+	margin: 30px auto;
 }
 
 .container {
@@ -87,7 +91,6 @@ header {
 }
 
 header nav {
-	width: 970px;
 	margin: 0 auto;
 	padding-top: 10px;
 	text-transform: uppercase;
@@ -202,6 +205,7 @@ ul.buttons li {
 	height: 100%;
 	margin-right: 10px;
 	background-color: #A0B3C0;
+	cursor: pointer;
 }
 
 ul.buttons li:hover {
@@ -274,46 +278,6 @@ aside .caption p {
  color: #abc;
 }
 
-@media (max-width: 900px) {
-	h1 {
-		margin: 10px 0 0;
-		font-size: 36px;
-	}
-	h2 {
-		font-size: 64px;
-	}
-	header {
-		background-size: 436px auto;
-		background-repeat: no-repeat;
-		height: 175px;
-	}
-	header nav .logo {
-		float: none;
-		text-align: center;
-	}
-	header nav .logo span {
-		display: none;
-	}
-	header nav .navLinks {
-		float: none;
-		margin: 0 auto;
-		overflow: auto;
-		width: 200px;
-		padding-top: 0;
-	}
-	header nav .navLinks li {
-		font-size: 16px;
-	}
-	.container,
-	header nav,
-	section.main,
-	article,
-	aside {
-		width: 436px;
-	}
-}
-
-
 
 /* Top Posts */
 
@@ -329,17 +293,19 @@ section.topPosts h2 {
 section.topPosts li {
 	float: left;
 	position: relative;
-	width: 325px;
-	height: 330px;
 }
 
 section.topPosts li .filter {
   background-color: hsla(206, 80%, 60%, 0.8);
-  width:325px;
-  height:330px;
   position: absolute;
   top:0;
   left: 0;
+}
+
+section.topPosts li,
+section.topPosts li .filter {
+  width:325px;
+  height:330px;
 }
 
 section.topPosts li .filter:hover {
@@ -369,11 +335,6 @@ footer {
 	background-color: #003353;
 }
 
-nav {
-	width: 970px;
-	margin: 30px auto;
-}
-
 footer .copyright,
 footer li,
 footer li a {
@@ -390,7 +351,6 @@ footer .copyright span {
 	margin-left: 8px;
 }
 
-
 footer ul {
 	padding-top: 8px;
 	float: right;
@@ -405,3 +365,76 @@ footer li:first-child {
 	border-left: none;
 }
 
+
+@media (max-width: 900px) {
+	h1 {
+		margin: 10px 0 0;
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 64px;
+	}
+	blockquote {
+		margin-left: 0;
+	}
+	.container,
+	header nav,
+	section.main,
+	article,
+	aside,
+	section.topPosts li,
+	section.topPosts li img,
+	section.topPosts li .filter {
+		width: 436px;
+	}
+	header nav .logo span,
+	article .author > a,
+	ul.buttons li span.text,
+	section.topPosts li:first-child {
+		display: none;
+	}
+	header {
+		background-size: 436px auto;
+		background-repeat: no-repeat;
+		height: 175px;
+	}
+	header nav .logo {
+		float: none;
+		text-align: center;
+	}
+	header nav .navLinks {
+		float: none;
+		margin: 0 auto;
+		overflow: auto;
+		width: 200px;
+		padding-top: 0;
+	}
+	header nav .navLinks li {
+		font-size: 16px;
+	}
+	section.main {
+		overflow: initial;
+	}
+	article .author {
+		margin-bottom: 25px;
+	}
+	article .author .articleDate {
+		padding: 0;
+	}
+	section.topPosts {
+		border-top: none;
+	}
+	section.topPosts li,
+	section.topPosts li .filter {
+		height: 330px;
+		overflow: hidden;
+	}
+	/*
+	The topPosts images are being cropped from the
+	bottom in the mobile browser.  I considered
+	cropping the images from the top or doing half &
+	half, but this looks like a full-blown project
+	by itself.  I'll save that for the future...
+	http://css-tricks.com/crop-top/
+	*/
+}
