@@ -335,6 +335,10 @@ footer {
 	background-color: #003353;
 }
 
+footer a {
+	text-decoration: none;
+}
+
 footer .copyright,
 footer li,
 footer li a {
@@ -349,6 +353,10 @@ footer .copyright a {
 footer .copyright span {
 	vertical-align: 8px;
 	margin-left: 8px;
+}
+
+footer .copyright a span:first-child::after {
+	content: ',';
 }
 
 footer ul {
@@ -390,7 +398,8 @@ footer li:first-child {
 	.container,
 	header nav,
 	section.main,
-	aside {
+	aside,
+	nav {
 		width: 436px;
 	}
 	article,
@@ -501,4 +510,29 @@ footer li:first-child {
 	itself.  I'll save that for the future...
 	http://css-tricks.com/crop-top/
 	*/
+	footer {
+		height: 300px;
+		font-size: 18px
+	}
+	footer ul {
+		float: initial;
+		overflow: hidden;
+		padding: 8px 60px 50px;
+	}
+	footer li:last-child {
+		border-left: none;
+	}
+	footer .copyright a {
+		display: block;
+		width: 276px;
+		padding-left: 80px;
+		text-align: center;
+	}
+	footer .copyright img {
+		width: 60px;
+		margin-bottom: 30px;
+	}
+	footer .copyright a span:first-child::after {
+		content: ' ';
+	}
 }
