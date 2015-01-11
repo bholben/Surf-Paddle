@@ -375,6 +375,9 @@ footer li:first-child {
 
 
 @media (max-width: 900px) {
+	/* A single break point is set at 900px.
+	 * The container snaps to 436px wide.
+	 */
 	body {
 		background-color: #ccc;
 	}
@@ -512,7 +515,7 @@ footer li:first-child {
 	*/
 	footer {
 		height: 300px;
-		font-size: 18px
+		font-size: 18px;
 	}
 	footer ul {
 		float: initial;
