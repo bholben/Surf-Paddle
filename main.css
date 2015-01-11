@@ -1,4 +1,5 @@
 
+/* Global Elements */
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
@@ -15,7 +16,6 @@ li {
 }
 
 h1 {
-	/*font-family: "Oswald", sans-serif;*/
 	margin: 185px 0 -15px;
 	font-size: 96px;
 	color: white;
@@ -273,6 +273,46 @@ aside .ad p {
 aside .caption p {
  color: #abc;
 }
+
+@media (max-width: 900px) {
+	h1 {
+		margin: 10px 0 0;
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 64px;
+	}
+	header {
+		background-size: 436px auto;
+		background-repeat: no-repeat;
+		height: 175px;
+	}
+	header nav .logo {
+		float: none;
+		text-align: center;
+	}
+	header nav .logo span {
+		display: none;
+	}
+	header nav .navLinks {
+		float: none;
+		margin: 0 auto;
+		overflow: auto;
+		width: 200px;
+		padding-top: 0;
+	}
+	header nav .navLinks li {
+		font-size: 16px;
+	}
+	.container,
+	header nav,
+	section.main,
+	article,
+	aside {
+		width: 436px;
+	}
+}
+
 
 
 /* Top Posts */
