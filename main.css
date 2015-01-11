@@ -140,7 +140,7 @@ header nav .navLinks img {
 section.main {
 	width: 970px;
 	margin: 0 auto;
-	overflow: auto;
+	overflow: hidden;
 }
 
 
@@ -268,7 +268,7 @@ aside .ad {
 	text-align: center;
 }
 
-aside .ad p {
+aside .adLink {
 	margin-top: 0;
 	text-align: right;
 	font-size: 14px;
@@ -367,6 +367,12 @@ footer li:first-child {
 
 
 @media (max-width: 900px) {
+	body {
+		background-color: #ccc;
+	}
+	.container {
+		background-color: white;
+	}
 	h1 {
 		margin: 10px 0 0;
 		font-size: 36px;
@@ -380,16 +386,21 @@ footer li:first-child {
 	.container,
 	header nav,
 	section.main,
+	aside {
+		width: 436px;
+	}
 	article,
-	aside,
+	aside .ad,
+	aside .ad img,
 	section.topPosts li,
 	section.topPosts li img,
 	section.topPosts li .filter {
-		width: 436px;
+		width: 376px;
 	}
 	header nav .logo span,
 	article .author > a,
 	ul.buttons li span.text,
+	aside .caption,
 	section.topPosts li:first-child {
 		display: none;
 	}
@@ -412,8 +423,8 @@ footer li:first-child {
 	header nav .navLinks li {
 		font-size: 16px;
 	}
-	section.main {
-		overflow: initial;
+	article {
+		padding: 30px;
 	}
 	article .author {
 		margin-bottom: 25px;
@@ -421,12 +432,35 @@ footer li:first-child {
 	article .author .articleDate {
 		padding: 0;
 	}
-	section.topPosts {
-		border-top: none;
+	aside {
+		margin-bottom: 120px;
+	}
+	aside .ad {
+		padding-left: 30px;
+		height: 300px;
+		margin-bottom: 50px;
+		overflow: hidden;
+	}
+	aside .ad img {
+		margin-bottom: -100px;
+	}
+	aside .adLink {
+		margin: -40px 30px;
+	}
+	section.topPosts h2 {
+		margin: 60px 0 30px;
+		font-size: 32px;
+	}
+	section.topPosts li {
+		padding-left: 30px;
+		margin-bottom: 20px;
+	}
+	section.topPosts li .filter {
+		left: 30px;
 	}
 	section.topPosts li,
 	section.topPosts li .filter {
-		height: 330px;
+		height: 280px;
 		overflow: hidden;
 	}
 	/*
