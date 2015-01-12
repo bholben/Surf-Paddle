@@ -1,6 +1,6 @@
 @media (max-width: 900px) {
-  /* A single break point is set at 900px.
-   * The container snaps to 436px wide.
+  /* A single break point is set at $breakWidth.
+   * The container snaps to $mobileWidth wide.
    */
   body {
     background-color: #ccc; }

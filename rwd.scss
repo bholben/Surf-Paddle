@@ -1,7 +1,9 @@
 
-@media (max-width: 900px) {
-	/* A single break point is set at 900px.
-	 * The container snaps to 436px wide.
+@import "vars";
+
+@media (max-width: $breakWidth) {
+	/* A single break point is set at $breakWidth.
+	 * The container snaps to $mobileWidth wide.
 	 */
 	body {
 		background-color: #ccc;
@@ -34,7 +36,7 @@
 	section.main,
 	aside,
 	nav {
-		width: 436px;
+		width: $mobileWidth;
 	}
 
 	article,
@@ -55,7 +57,7 @@
 	}
 
 	header {
-		background-size: 436px auto;
+		background-size: $mobileWidth auto;
 		background-repeat: no-repeat;
 		height: 175px;
 
