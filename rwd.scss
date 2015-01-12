@@ -1,0 +1,218 @@
+
+@media (max-width: 900px) {
+	/* A single break point is set at 900px.
+	 * The container snaps to 436px wide.
+	 */
+	body {
+		background-color: #ccc;
+	}
+
+	.container {
+		background-color: white;
+	}
+
+	h1 {
+		margin: 10px 0 0;
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 64px;
+	}
+
+	h5 {
+		font-size: 24px;
+		margin-bottom: 0;
+	}
+
+	blockquote {
+		margin-left: 0;
+	}
+
+	.container,
+	header nav,
+	section.main,
+	aside,
+	nav {
+		width: 436px;
+	}
+
+	article,
+	aside .ad,
+	aside .ad img,
+	section.topPosts li,
+	section.topPosts li img,
+	section.topPosts li .filter {
+		width: 376px;
+	}
+
+	header nav .logo span,
+	article .author > a,
+	ul.buttons li span.text,
+	aside .caption,
+	section.topPosts li:first-child {
+		display: none;
+	}
+
+	header {
+		background-size: 436px auto;
+		background-repeat: no-repeat;
+		height: 175px;
+
+		nav {
+			.logo {
+				float: none;
+				text-align: center;
+			}
+
+			.navLinks {
+				float: none;
+				margin: 0 auto;
+				overflow: auto;
+				width: 200px;
+				padding-top: 0;
+
+				li {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	article {
+		padding: 30px;
+
+		.author {
+			margin-bottom: 25px;
+
+			.articleDate {
+				padding: 0;
+			}
+		}
+	}
+
+	ul.buttons {
+		height: 40px;
+
+		li span.icon {
+			width: 45px;
+
+			img {
+				width: 22px;
+				padding: 10px;
+			}
+		}
+
+		li:nth-child(2) span.icon img {
+			padding-left: 12px;
+		}
+
+		li:last-child span.icon img {
+			padding-left: 15px;
+		}
+	}
+
+	aside {
+		margin-bottom: 120px;
+
+		.social {
+			margin: 65px 0;
+
+			img {
+				width: 120px;
+			}
+		}
+
+		.social a {
+			font-size: 18px;
+		}
+
+		.ad {
+			padding-left: 30px;
+			height: 300px;
+			margin-bottom: 50px;
+			overflow: hidden;
+
+			img {
+				margin-bottom: -100px;
+			}
+		}
+
+		.adLink {
+			margin: -40px 30px;
+		}
+	}
+
+	section.topPosts {
+		h2 {
+			margin: 60px 0 30px;
+			font-size: 32px;
+		}
+
+		li {
+			padding-left: 30px;
+			margin-bottom: 20px;
+
+			.filter {
+				left: 30px;
+			}
+
+			&,
+			& .filter {
+				height: 280px;
+				overflow: hidden;
+			}
+		}
+	}
+
+	/*
+	The large images are being cropped from the
+	bottom in the mobile browser.  I considered
+	cropping from the top or doing half & half,
+	but this looks like a full-blown project by
+	itself.  I'll save that for the future...
+	http://css-tricks.com/crop-top/
+	*/
+	footer {
+		height: 300px;
+		font-size: 18px;
+
+		ul {
+			float: initial;
+			overflow: hidden;
+			padding: 8px 60px 50px;
+			text-align: center;
+		}
+
+		li {
+			display: inline;
+
+			&:last-child {
+				border-left: none;
+			}
+		}
+
+		li,
+		li a {
+			float: none;
+		}
+
+		.copyright {
+			a {
+				display: block;
+				width: 276px;
+				padding-left: 80px;
+				text-align: center;
+
+				span:first-child::after {
+					content: ' ';
+				}
+			}
+
+			img {
+				width: 60px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

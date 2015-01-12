@@ -1,13 +1,11 @@
 
-// Variables
-$col: #0069B6;
-
+@import "vars";
 
 /* Global Elements */
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
-	color: #083451;
+	color: $cDefault;
 }
 
 ul {
@@ -19,7 +17,7 @@ ul {
 h1 {
 	margin: 185px 0 -15px;
 	font-size: 96px;
-	color: white;
+	color: $cLightest;
 }
 
 h2 {
@@ -27,25 +25,25 @@ h2 {
 	font-size: 72px;
 	font-weight: bold;
 	line-height: 100%;
-	color: #003352;
+	color: $cDarker;
 }
 
 h3 {
 	font-size: 28px;
-	color: $col;
+	color: $cBright;
 }
 
 h4 {
 	margin: 40px 0 0;
 	font-size: 18px;
-	color: #0073BA;
+	color: $cBright;
 }
 
 h5 {
 	margin: 10px 0;
 	font-size: 18px;
 	font-weight: 100;
-	color: #347FBF;
+	color: $cDark;
 }
 
 h6 {
@@ -62,7 +60,7 @@ h1, h6 {
 }
 
 a {
-	color: #abc;
+	color: $cLightGray;
 }
 
 blockquote {
@@ -89,50 +87,50 @@ header {
 	height: 523px;
 	margin-bottom: 50px;
 	background-image: url("assets/header.jpg");
-}
 
-header nav {
-	margin: 0 auto;
-	padding-top: 10px;
-	text-transform: uppercase;
-}
+	nav {
+		margin: 0 auto;
+		padding-top: 10px;
+		text-transform: uppercase;
 
-header nav .logo {
-	float: left;
-}
+		.logo {
+			float: left;
 
-header nav .logo img {
-	width: 42px;
-	vertical-align: middle;
-}
+			img {
+				width: 42px;
+				vertical-align: middle;
+			}
 
-header nav .logo span {
-	height: 42px;
-	margin-left: 10px;
-}
+			span {
+				height: 42px;
+				margin-left: 10px;
+			}
+		}
 
-header nav a {
-	text-decoration: none;
-}
+		a {
+			text-decoration: none;
+		}
 
-header nav .navLinks {
-	float: right;
-	padding: 8px;
-}
+		.navLinks {
+			float: right;
+			padding: 8px;
 
-header nav .navLinks li {
-	float: left;
-	margin-left: 15px;
-	font-size: 20px;
-}
+			li {
+				float: left;
+				margin-left: 15px;
+				font-size: 20px;
 
-header nav .navLinks li a {
-	color: #083451;
-}
+				a {
+					color: $cDefault;
+				}
+			}
 
-header nav .navLinks img {
-	height: 18px;
-	margin-left: 5px;
+			img {
+				height: 18px;
+				margin-left: 5px;
+			}
+		}
+	}
 }
 
 
@@ -151,47 +149,47 @@ article {
 	float: left;
 	width: 650px;
 	padding: 0 20px 20px 0;
-}
 
-article .author {
-	margin-bottom: 40px;
-	font-size: 14px;
-}
+	.author {
+		margin-bottom: 40px;
+		font-size: 14px;
 
-article .author > a {
-	text-decoration: none;
-	color: #347FBF;
-}
+		> a {
+			text-decoration: none;
+			color: $cDark;
+		}
 
-article .author img {
-	vertical-align: -6px;
-	width: 25px;
-}
+		img {
+			vertical-align: -6px;
+			width: 25px;
+		}
 
-article .author span {
-	padding: 0 5px;
-}
+		span {
+			padding: 0 5px;
+		}
 
-article .author .authorName {
-	padding-left: 30px;
-}
+		.authorName {
+			padding-left: 30px;
+		}
 
-article .author .articleDate,
-article .author .articleDate a {
-	color: #abc;
-}
+		.articleDate,
+		.articleDate a {
+			color: $cLightGray;
+		}
+	}
 
-article p {
-	color: #7D868C;
-}
+	p {
+		color: #7D868C;
+	}
 
-article p a {
-	text-decoration: underline;
-}
+	p a {
+		text-decoration: underline;
+	}
 
-article p a:hover {
-	color: $col;
-	cursor: pointer;
+	p a:hover {
+		color: $cBright;
+		cursor: pointer;
+	}
 }
 
 
@@ -199,41 +197,41 @@ article p a:hover {
 
 ul.buttons {
 	height: 30px;
-}
 
-ul.buttons li {
-	float: left;
-	height: 100%;
-	margin-right: 10px;
-	background-color: #A0B3C0;
-	cursor: pointer;
-}
+	li {
+		float: left;
+		height: 100%;
+		margin-right: 10px;
+		background-color: #A0B3C0;
+		cursor: pointer;
 
-ul.buttons li:hover {
-	background-color: $col;
-}
+		&:hover {
+			background-color: $cBright;
 
-ul.buttons li span.icon {
-	float: left;
-	width: 32px;
-	height: 100%;
-	background-color: #5D6970;
-}
+			span.icon {
+				background-color: $cDarker;
+			}
+		}
 
-ul.buttons li:hover span.icon {
-	background-color: #003353;
-}
+		span.icon {
+			float: left;
+			width: 32px;
+			height: 100%;
+			background-color: #5D6970;
 
-ul.buttons li span.icon img {
-	padding: 8px;
-}
+			img {
+				padding: 8px;
+			}
+		}
 
-ul.buttons li span.text {
-	float: left;
-	height: 100%;
-	padding: 5px 15px;
-	font-size: 14px;
-	color: #EEF3F9;
+		span.text {
+			float: left;
+			height: 100%;
+			padding: 5px 15px;
+			font-size: 14px;
+			color: #EEF3F9;
+		}
+	}
 }
 
 
@@ -242,39 +240,39 @@ ul.buttons li span.text {
 aside {
 	float: right;
 	width: 278px;
-}
 
-aside .social {
-	text-align: center;
-	margin-bottom: 50px;
-	padding-top: 15px;
-}
+	.social {
+		text-align: center;
+		margin-bottom: 50px;
+		padding-top: 15px;
 
-aside .social a {
-	display: inline-block;
-	padding: 0 7px;
-	border-right: 1px solid #eee;
-	font-size: 14px;
-	color: #abc;
-	text-decoration: none;
-}
+		a {
+			display: inline-block;
+			padding: 0 7px;
+			border-right: 1px solid #eee;
+			font-size: 14px;
+			color: $cLightGray;
+			text-decoration: none;
 
-aside .social a:last-child {
-	border-right: none;
-}
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
 
-aside .ad {
-	text-align: center;
-}
+	.ad {
+		text-align: center;
+	}
 
-aside .adLink {
-	margin-top: 0;
-	text-align: right;
-	font-size: 14px;
-}
+	.adLink {
+		margin-top: 0;
+		text-align: right;
+		font-size: 14px;
+	}
 
-aside .caption p {
- color: #abc;
+	.caption p {
+	 color: $cLightGray;
+	}
 }
 
 
@@ -282,46 +280,46 @@ aside .caption p {
 
 section.topPosts {
 	border-top: 1px solid lightgrey;
-}
 
-section.topPosts h2 {
-	margin: 30px 0;
-	text-align: center;
-}
+	h2 {
+		margin: 30px 0;
+		text-align: center;
+	}
 
-section.topPosts li {
-	float: left;
-	position: relative;
-}
+	li {
+		float: left;
+		position: relative;
 
-section.topPosts li .filter {
-  background-color: hsla(206, 80%, 60%, 0.8);
-  position: absolute;
-  top:0;
-  left: 0;
-}
+		.filter {
+		  background-color: hsla(206, 80%, 60%, 0.8);
+		  position: absolute;
+		  top:0;
+		  left: 0;
 
-section.topPosts li,
-section.topPosts li .filter {
-  width:325px;
-  height:330px;
-}
+			&:hover {
+			  background-color: hsla(206, 80%, 60%, 0);
+				cursor: pointer;
 
-section.topPosts li .filter:hover {
-  background-color: hsla(206, 80%, 60%, 0);
-	cursor: pointer;
-}
+				h3 {
+				  color: $cLightest;
+				}
+			}
 
-section.topPosts li .filter h3 {
-	position: absolute;
-	left: 15px;
-	bottom: 15px;
-	margin: 0;
-	color: #003353;
-}
+			& h3 {
+				position: absolute;
+				left: 15px;
+				bottom: 15px;
+				margin: 0;
+				color: $cDarker;
+			}
+		}
 
-section.topPosts li .filter:hover h3 {
-  color: white;
+		&,
+		.filter {
+		  width:325px;
+		  height:330px;
+		}
+	}
 }
 
 /* Footer */
@@ -331,43 +329,46 @@ footer {
 	height: 100px;
 	overflow: auto;
 	font-size: 14px;
-	background-color: #003353;
-}
+	background-color: $cDarker;
 
-footer a {
-	text-decoration: none;
-}
+	a {
+		text-decoration: none;
+	}
 
-footer .copyright,
-footer li,
-footer li a {
-	float: left;
-	color: #A0B3C0;
-}
+	.copyright,
+	li,
+	li a {
+		float: left;
+		color: #A0B3C0;
+	}
 
-footer .copyright a {
-	color: #A3B3BF;
-}
+	.copyright {
+		a {
+			color: #A3B3BF;
 
-footer .copyright span {
-	vertical-align: 8px;
-	margin-left: 8px;
-}
+			span:first-child::after {
+				content: ',';
+			}
+		}
 
-footer .copyright a span:first-child::after {
-	content: ',';
-}
+		span {
+			vertical-align: 8px;
+			margin-left: 8px;
+		}
 
-footer ul {
-	padding-top: 8px;
-	float: right;
-}
+	}
 
-footer li {
-	padding: 0 5px;
-	border-left: 1px solid #5C6870;
-}
+	ul {
+		padding-top: 8px;
+		float: right;
+	}
 
-footer li:first-child {
-	border-left: none;
+	li {
+		padding: 0 5px;
+		border-left: 1px solid #5C6870;
+
+		&:first-child {
+			border-left: none;
+		}
+	}
 }
