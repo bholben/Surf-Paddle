@@ -98,8 +98,7 @@
 	aside .social img {
 		width: 120px;
 	}
-	aside .social span {
-		padding: 0 7px 0 3px;
+	aside .social a {
 		font-size: 18px;
 	}
 	aside .ad {

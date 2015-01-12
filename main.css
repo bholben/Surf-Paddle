@@ -9,9 +9,6 @@ body {
 ul {
 	margin: 0;
 	padding: 0;
-}
-
-li {
 	list-style: none;
 }
 
@@ -249,19 +246,17 @@ aside .social {
 	padding-top: 15px;
 }
 
-aside .social span {
-	padding: 0 7px 0 3px;
-	font-size: 14px;
+aside .social a {
+	display: inline-block;
+	padding: 0 7px;
 	border-right: 1px solid #eee;
-}
-
-aside .social span:last-child {
-	border-right: none;
-}
-
-aside .social span a {
+	font-size: 14px;
 	color: #abc;
 	text-decoration: none;
+}
+
+aside .social a:last-child {
+	border-right: none;
 }
 
 aside .ad {
