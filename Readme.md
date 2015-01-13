@@ -1,6 +1,4 @@
-# 01/07/15 
-
-___This homework is due by 8am, on 01/12/2015___
+Working deliverable: [http://bholben.github.io/Surf-Paddle/](http://bholben.github.io/Surf-Paddle/)
 
 ### Surf & Paddle
 
