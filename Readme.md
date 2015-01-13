@@ -18,6 +18,8 @@ This homework is due Monday (01.12.15) morning by 8am and should be uploaded to 
 
 Use this live mockup to match the centering [here](http://h.timw.co/code/surf/)
 
+![Desktop image to match](surf-paddle.png)
+
 ### Bonus
 
 1. Make it responsive. 
