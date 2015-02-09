@@ -18,7 +18,7 @@ A fictitious landing page created to emphasize CSS layout with one responsive br
   * CSS
   * Sass (SCSS)
   * Normalize
-  * Responsive*
+  * Responsive
 
 ### How to use it
 
