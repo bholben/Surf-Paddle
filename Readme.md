@@ -5,9 +5,13 @@
 
 A fictitious landing page created to emphasize CSS layout with one responsive breakpoint  
 
-Objective:  Match this artwork...  
+### Artwork to Match
+
 ![artwork](surf-paddle.png)  
-Deliverable: [http://bholben.github.io/Surf-Paddle/](http://bholben.github.io/Surf-Paddle/)  
+
+### Deliverable
+
+[http://bholben.github.io/Surf-Paddle/](http://bholben.github.io/Surf-Paddle/)  
 
 ### Technologies
   * HTML
